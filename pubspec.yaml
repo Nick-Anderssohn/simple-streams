@@ -1,6 +1,6 @@
 name: simple_streams
 description: A wrapper meant to make streams as simple as possible, while avoiding memory leaks.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/Nick-Anderssohn/simple-streams
 author: Nick Anderssohn <ncadevelopment@gmail.com>
 environment:

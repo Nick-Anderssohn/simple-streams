@@ -1,4 +1,4 @@
-import '../lib/simple_stream.dart';
+import '../lib/simple_streams.dart';
 import 'dart:html';
 
 class Test {

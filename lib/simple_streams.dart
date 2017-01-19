@@ -1,4 +1,4 @@
-library simple_stream;
+library simple_streams;
 
 import "dart:async";
 
