@@ -5,4 +5,5 @@ Should be used for event streams (i.e. you wanted to make your own onClick or so
 Not meant for other streaming purposes.
 
 Source code: https://github.com/Nick-Anderssohn/simple-streams
+
 See the example in the test folder.
