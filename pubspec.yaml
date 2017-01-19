@@ -1,0 +1,12 @@
+name: simple_streams
+description: A wrapper meant to make streams as simple as possible, while avoiding memory leaks.
+version: 1.0.0
+author: Nick Anderssohn <ncadevelopment@gmail.com>
+environment:
+  sdk: any
+dependencies:
+  browser: any
+  js: any
+transformers:
+- $dart2js:
+    minify: true
