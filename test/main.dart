@@ -5,6 +5,7 @@ class Test {
   SimpleStream _testStream = new SimpleStream();
 
   Test() {}
+  //equivalent to onFire.listen() if onFire was of type Stream
   onFire(handler(var e)) {
     return _testStream.listen(handler);
   }
@@ -16,6 +17,7 @@ class Test {
   }
 
   fire() {
+    //equivalent of calling add on a StreamController that was initialized with .broadcast()
     _testStream.add('example event fired');
   }
 }
