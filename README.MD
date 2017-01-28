@@ -8,3 +8,9 @@ Not meant for other streaming purposes.
 Source code: https://github.com/Nick-Anderssohn/simple-streams
 
 See the example in the test folder.
+
+Installing:
+
+Add this to the pubsepc.yaml
+dependencies:
+  simple_streams: 
