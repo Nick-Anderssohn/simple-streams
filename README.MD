@@ -12,5 +12,6 @@ See the example in the test folder.
 Installing:
 
 Add this to the pubsepc.yaml
+
 dependencies:
   simple_streams: 
