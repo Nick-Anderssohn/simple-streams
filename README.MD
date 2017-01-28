@@ -14,4 +14,5 @@ Installing:
 Add this to the pubsepc.yaml
 
 dependencies:
+  
   simple_streams: 
