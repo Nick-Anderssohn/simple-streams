@@ -28,4 +28,9 @@ class SimpleStream {
   add(var event) {
     _streamer.add(event);
   }
+
+  cancelSub(StreamSubscription sub) {
+    sub.cancel();
+    subs.remove(sub);
+  }
 }
