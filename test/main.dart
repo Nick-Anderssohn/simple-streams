@@ -3,7 +3,7 @@ import 'dart:html';
 
 class Test {
   SimpleStream _testStream = new SimpleStream();
-
+  int numFired = 0;
   Test() {}
   //equivalent to onFire.listen() if onFire was of type Stream
   onFire(handler(var e)) {
@@ -18,14 +18,17 @@ class Test {
 
   fire() {
     //equivalent of calling add on a StreamController that was initialized with .broadcast()
-    _testStream.add('example event fired');
+    numFired++;
+    _testStream.add('click me to fire event. Events fired: $numFired');
   }
 }
 
 main() {
   Test test = new Test();
   test.onFire(handler); //this is the equivalent of doing onSomeEvent.listen() for a normal dart Stream
-  test.fire();
+  querySelector('#test-div').onClick.listen((var e) => test.fire());
+  querySelector('#test-div').text = "click me to fire event.";
+  querySelector('#btn-cancel').onClick.listen((var e) => test.cancelAllFireSubs());
 
   //this will often be where you want to call cancelAll...helps avoid memory leaks...
   window.onBeforeUnload.listen((var e) {

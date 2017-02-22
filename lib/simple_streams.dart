@@ -17,8 +17,9 @@ class SimpleStream {
   //cancels all stream subscriptions
   //call this when done with the stream (often in the onBeforeUnload.listen handler for example)
   cancelAll() {
-    for (StreamSubscription f in subs) {
-      f.cancel();
+    for (int i = 0; i < subs.length; i++) {
+      subs[i].cancel();
+      subs.removeAt(i);
     }
   }
 
