@@ -3,7 +3,7 @@ Normal broadcast streams can be a pain. You have to keep track of all stream sub
 
 ---
 
-## Standard Dart Method (Bad)
+## Standard Dart Method (Not Fun)
 
 First you must create a new broadcast StreamController and keep track of it's stream.
 
@@ -29,7 +29,7 @@ sub.cancel();
 
 Everytime you call .listen on that stream, it will create another StreamSubscription. You must keep track of all StreamSubscriptions and cancel all of them, otherwise you will create a memory leak. Or you can use simple streams to make it easier ;)
 
-## Simple Streams Method
+## Simple Streams Method (Super Fun)
 
 Instead of creating a stream controller (and probably a separate variable to hold its stream), just create a simple stream.
 
